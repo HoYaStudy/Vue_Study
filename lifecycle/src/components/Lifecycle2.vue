@@ -45,11 +45,26 @@ export default defineComponent({
   updated: function () {
     console.log("2> updated");
   },
+  activated: function () {
+    console.log("2> activated");
+  },
+  deactivated: function () {
+    console.log("2> deactivated");
+  },
   beforeUnmount: function () {
     console.log("2> beforeUnmount");
   },
   unmounted: function () {
     console.log("2> unmounted");
+  },
+  errorCaptured: function () {
+    console.log("2> errorCaptured");
+  },
+  renderTracked: function () {
+    console.log("2> renderTracked");
+  },
+  renderTriggered: function () {
+    console.log("2> renderTriggered");
   },
 });
 </script>
